@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const userInput = document.getElementById("user-input");
     const chatMessages = document.getElementById("chatbot-messages");
 
-    const OPENAI_API_KEY = "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"; // Replace with your OpenAI API key
+    const OPENAI_API_KEY = "YOUR_API_KEY"; // Replace with your OpenAI API key
     const API_URL = "https://api.openai.com/v1/chat/completions";
 
     // Toggle Chatbot Visibility
