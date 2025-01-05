@@ -1,0 +1,116 @@
+/* General reset */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Blank background */
+}
+
+/* Container for chatbot */
+.container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Chatbot button at the bottom left corner */
+.chatbot-toggler {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+/* Hover effect for chatbot button */
+.chatbot-toggler:hover {
+    background-color: #0056b3;
+}
+
+/* Chatbot panel styles */
+.chatbot {
+    position: fixed;
+    bottom: 60px;
+    left: 0;
+    width: 300px;
+    height: 400px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+}
+
+/* Header of the chatbot */
+.chatbot header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Chat messages container */
+.chatbox {
+    list-style: none;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+/* Incoming messages */
+.chat.incoming {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+/* Outgoing messages */
+.chat.outgoing {
+    text-align: right;
+}
+
+/* Chat input section */
+.chat-input {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #eaeaea;
+}
+
+/* Textarea for input */
+.chat-input textarea {
+    width: 80%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+/* Send button icon */
+#send-btn {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background 0.2s ease;
+}
+
+/* Send button hover effect */
+#send-btn:hover {
+    background-color: #eaeaea;
+}
